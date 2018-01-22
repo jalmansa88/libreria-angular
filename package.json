@@ -8,13 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
-    "start": "node server.js"
+    "postinstall": "ng build --prod",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "^1.6.2",
-    "@angular/compiler-cli": "^5.1.2",
     "@angular/animations": "^5.1.0",
     "@angular/common": "^5.1.0",
     "@angular/compiler": "^5.1.2",
@@ -26,7 +24,7 @@
     "@angular/router": "^5.1.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.9",
     "angular-in-memory-web-api": "^0.5.2",
-    "bootstrap": "4.0.0-beta.2",
+    "bootstrap": "^4.0.0",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^2.0.1",
@@ -36,7 +34,7 @@
   },
   "devDependencies": {
     "@angular-devkit/core": "0.0.28",
-    "@angular/cli": "^1.6.2",
+    "@angular/cli": "1.6.4",
     "@angular/compiler-cli": "^5.1.2",
     "@angular/language-service": "^5.1.0",
     "@types/jasmine": "~2.8.3",
