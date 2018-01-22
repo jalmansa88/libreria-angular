@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-	  "postinstall": "ng build --aot -prod",
-	  "start": "node server.js"
+    "postinstall": "ng build --aot -prod",
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
@@ -57,8 +57,7 @@
     "typescript": "~2.5.3"
   },
   "engines": {
-   "node": "8.5.0",
-   "npm": "3.10.10"
+    "node": "8.5.0",
+    "npm": "3.10.10"
   }
-  
 }
