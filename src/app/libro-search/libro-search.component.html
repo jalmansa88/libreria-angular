@@ -1,0 +1,30 @@
+<div id="search-component" class="container">
+  <div class="row justify-content-center">
+    <h4>Búsqueda de libros</h4>
+    <div class="input-group justify-content-center">
+      <input #searchBox id="search-box" placeholder="Buscar" />
+      <button class="input-group-btn" (click)="search(searchBox.value)"><span class="fa fa-search"></span></button>
+    </div>
+  </div>
+  <div class="justify-content-center">
+    <table class="table table-hover">
+      <thead>
+        <th>Id</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Fecha Publicacion</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let libro of libros$ | async " routerLink="/detail/{{libro.id}}">
+          <td>{{libro.id}}</td>
+          <td>{{libro.name}}</td>
+          <td>{{libro.author}}</td>
+          <td>{{libro.date}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="! (libros$ | async)?.length ">
+    No hay resultados.
+  </div>
+</div>
