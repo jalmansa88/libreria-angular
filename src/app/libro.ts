@@ -3,4 +3,8 @@ export class Libro {
 	name: string;
 	author: string;
 	date: string;
+	publisher: string;
+	price: number;
+	language: string;
+
 }
